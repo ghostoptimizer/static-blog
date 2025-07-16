@@ -1,0 +1,15 @@
+baseURL = "http://jadonsblog.com/"
+languageCode = "en-us"
+title = "Jadon Lawson"
+theme = "risotto"
+
+[params]
+  description = "The best mothafuckin blog that's still being worked on."
+  themeStyle = "dark"
+  defaultTheme = "dark"
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
