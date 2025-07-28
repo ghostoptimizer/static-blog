@@ -22,7 +22,7 @@ jobs:
         uses: burnett01/rsync-deployments@master
         with:
           switches: -avz --delete
-          path: public/
+          path:      public/
           remote_host: ${{ secrets.DROPLET_HOST }}
           remote_user: webdeploy
           remote_path: /var/www/releases
