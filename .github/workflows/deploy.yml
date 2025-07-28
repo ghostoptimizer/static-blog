@@ -18,6 +18,11 @@ jobs:
       - name: Build
         run: hugo -d public
 
+      - name: 🔍 Debug deploy inputs
+        run: |
+          echo "REMOTE_HOST = ${{ secrets.DROPLET_HOST }}"
+          echo "${{ secrets.DEPLOY_KEY }}" | ssh-keygen -lf - || echo "⚠️ key parse failed"
+
       - name: Deploy via rsync over SSH
         uses: burnett01/rsync-deployments@master
         with:
