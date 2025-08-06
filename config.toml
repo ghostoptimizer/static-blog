@@ -1,1 +1,49 @@
-theme = "risotto"
+# ————————————————————————————————————————————————————————————————
+#  Site-wide settings
+# ————————————————————————————————————————————————————————————————
+baseURL        = "https://jadonsblog.com/"    # change to your real URL
+languageCode   = "en-us"
+title          = "Jadon’s Blog"               # your site title
+theme          = "risotto"                    # the Hugo theme folder name
+paginate       = 10                           # posts per page
+enableRobotsTXT = true
+
+# ————————————————————————————————————————————————————————————————
+#  Params
+# ————————————————————————————————————————————————————————————————
+[params]
+  author           = "Jadon Lawson"
+  description      = "A Hugo blog powered by the Risotto theme"
+  dateFormat       = "Jan 2, 2006"
+  highlightStyle   = "monokai"                 # or “dracula”, “gruvbox”, etc.
+  # social links (optional)
+  github           = "ghostoptimizer"
+  twitter          = "your_twitter_handle"
+  linkedin         = "your_linkedin_username"
+  email            = "hello@jadonsblog.com"
+
+# ————————————————————————————————————————————————————————————————
+#  Main menu (header navigation)
+# ————————————————————————————————————————————————————————————————
+[[menu.main]]
+  identifier = "home"
+  name       = "Home"
+  url        = "/"
+  weight     = 1
+
+[[menu.main]]
+  identifier = "blog"
+  name       = "Blog"
+  url        = "/posts/"   # adjust to whatever you use for your blog section
+  weight     = 2
+
+[[menu.main]]
+  identifier = "about"
+  name       = "About"
+  url        = "/about/"
+  weight     = 3
+
+
+[taxonomies]
+  tag         = "tags"
+  category    = "categories"
