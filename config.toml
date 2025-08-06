@@ -11,12 +11,13 @@ enableRobotsTXT = true
 # ————————————————————————————————————————————————————————————————
 #  Params
 # ————————————————————————————————————————————————————————————————
-[params]
+[author]
   author           = "Jadon Lawson"
   description      = "A Hugo blog powered by the Risotto theme"
   dateFormat       = "Jan 2, 2006"
-  highlightStyle   = "monokai"                 # or “dracula”, “gruvbox”, etc.
-  # social links (optional)
+  highlightStyle   = "monokai"                 # or “dracula”, “gruvb
+
+  [params]
   github           = "ghostoptimizer"
   twitter          = "your_twitter_handle"
   linkedin         = "your_linkedin_username"
@@ -32,15 +33,15 @@ enableRobotsTXT = true
   weight     = 1
 
 [[menu.main]]
-  identifier = "blog"
-  name       = "Blog"
-  url        = "/posts/"   # adjust to whatever you use for your blog section
+  identifier = "about"
+  name       = "About"
+  url        = "/about/"   # adjust to whatever you use for your blog section
   weight     = 2
 
 [[menu.main]]
-  identifier = "about"
-  name       = "About"
-  url        = "/about/"
+  identifier = "blog"
+  name       = "Blog"
+  url        = "/posts/"
   weight     = 3
 
 
