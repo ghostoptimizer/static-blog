@@ -1,38 +1,26 @@
 name: Publish Hugo site
 
-on:
-  push:
-    branches: [ main ]
-
+on: [push]
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: '0.115.1'
-
       - name: Build
         run: hugo -d public
-
-      - name: 🔍 Debug deploy inputs
-        run: |
-          echo "REMOTE_HOST = ${{ secrets.DROPLET_HOST }}"
-          echo "${{ secrets.DEPLOY_KEY }}" | ssh-keygen -lf - || echo "⚠️ key parse failed"
-
       - name: Deploy via rsync over SSH
         uses: burnett01/rsync-deployments@master
         with:
           switches: -avz --delete
-          path:      public/
+          path: public/
           remote_host: ${{ secrets.DROPLET_HOST }}
           remote_user: webdeploy
           remote_path: /var/www/releases
           remote_key: ${{ secrets.DEPLOY_KEY }}
-
       - name: Flip current symlink
         uses: appleboy/ssh-action@v0.1.7
         with:
@@ -40,6 +28,5 @@ jobs:
           username: webdeploy
           key: ${{ secrets.DEPLOY_KEY }}
           script: |
-            # Determine the most recent release folder
             LATEST=$(ls -1 /var/www/releases | sort | tail -n1)
             ln -sfn /var/www/releases/$LATEST /var/www/current
