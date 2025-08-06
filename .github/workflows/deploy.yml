@@ -30,3 +30,10 @@ jobs:
           script: |
             LATEST=$(ls -1 /var/www/releases | sort | tail -n1)
             ln -sfn /var/www/releases/$LATEST /var/www/current
+      - name: Verify live site
+        run: |
+          STATUS=$(curl -o /dev/null -s -w "%{http_code}" https://jadonsblog.com)
+          if [[ "$STATUS" != "200" ]]; then
+              echo "Site health check failed (status $STATUS)" >&2
+              exit 1
+          fi
