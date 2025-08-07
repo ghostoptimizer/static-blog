@@ -1,9 +1,9 @@
 # ————————————————————————————————————————————————————————————————
 #  Site-wide settings
 # ————————————————————————————————————————————————————————————————
-baseURL        = "https://jadonsblog.com/"    # change to your real URL
+baseURL        = "http://localhost:1313/"    # change to your real URL
 languageCode   = "en-us"
-title          = "Jadon’s Blog"               # your site title
+title          = "Jadon’s Blog(DEMO)"               # your site title
 theme          = "risotto"                    # the Hugo theme folder name
 paginate       = 10                           # posts per page
 enableRobotsTXT = true
