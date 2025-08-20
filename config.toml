@@ -1,7 +1,7 @@
 #  ————————————————————————————————————————————————————————————————
 #  Site-wide settings
 # ————————————————————————————————————————————————————————————————
-baseURL        = "http://localhost:1313/"    # change to your real URL
+baseURL        = "https://jadonsblog.com/"    # change to your real URL
 languageCode   = "en-us"
 title          = "Jadon’s Blog(DEMO)"               # your site title
 theme          = "risotto"                    # the Hugo theme folder name
