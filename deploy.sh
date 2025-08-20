@@ -29,3 +29,4 @@ echo "Updating current → $TIMESTAMP"
 ssh -i $SSH_KEY $REMOTE_USER@$REMOTE_HOST << EOF
   ln -sfn $RELEASES_DIR/$TIMESTAMP $CURRENT_LINK
   echo "Deployed $TIMESTAMP!"
+EOF

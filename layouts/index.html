@@ -1,0 +1,78 @@
+{{ define "main" }}
+  <link rel="stylesheet" href="/css/custom.css">
+<main class="content">
+  <section class="profile">
+    <div class="profile-image">
+      <img src="/images/IMG_9989_converted.jpeg" alt="Jadon Lawson" style="border-radius: 10px; max-width: 200px;" />
+    </div>
+    <div class="profile-info">
+      <h1>Jadon Lawson 👽</h1>
+      <p><strong>DevOps Engineer</strong></p>
+      <p>DevOps Engineer | I build reliable infrastructure and automate everything I can.</p>
+      
+      <h2>Contact</h2>
+      <ul>
+        <li>Email: <a href="mailto:jadon@example.com">jadon@example.com</a></li>
+        <li>GitHub: <a href="https://github.com/yourhandle" target="_blank">yourhandle</a></li>
+        <li>LinkedIn: <a href="https://linkedin.com/in/yourhandle" target="_blank">yourhandle</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>Disk Usage Monitor</strong> — A Bash script that sends email alerts when usage exceeds 80%.</li>
+      <li><strong>Static Blog</strong> — Hugo + Terraform + Ansible + GitHub Actions</li>
+    </ul>
+  </section>
+
+  <style>
+    .content {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+      font-family: monospace;
+    }
+
+    .profile {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-bottom: 3rem;
+    }
+
+    .profile-info {
+      flex: 1;
+    }
+
+    .profile-image img {
+      max-width: 100%;
+      box-shadow: 0 0 10px #000;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      margin: 0.5rem 0;
+    }
+
+    a {
+      color: var(--color-primary);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .projects {
+      margin-top: 2rem;
+    }
+  </style>
+</main>
+{{ end }}
