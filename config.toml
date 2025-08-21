@@ -1,30 +1,34 @@
-#  ————————————————————————————————————————————————————————————————
-#  Site-wide settings
-# ————————————————————————————————————————————————————————————————
-baseURL        = "https://jadonsblog.com/"    # change to your real URL
+baseURL        = "https://jadonsblog.com/"
 languageCode   = "en-us"
-title          = "Jadon’s Blog(DEMO)"               # your site title
-theme          = "risotto"                    # the Hugo theme folder name
-paginate       = 10                           # posts per page
+title          = "Jadon’s Blog"
+theme          = "risotto"
+paginate       = 10
 enableRobotsTXT = true
 
 # ————————————————————————————————————————————————————————————————
-#  Params
+#  Author Info
 # ————————————————————————————————————————————————————————————————
 [author]
-  author           = "Jadon Lawson"
-  description      = "A Hugo blog powered by the Risotto theme"
-  dateFormat       = "Jan 2, 2006"
-  highlightStyle   = "monokai"                 # or “dracula”, “gruvb
-
-  [params]
-  github           = "ghostoptimizer"
-  twitter          = "your_twitter_handle"
-  linkedin         = "your_linkedin_username"
-  email            = "hello@jadonsblog.com"
+  author         = "Jadon Lawson"
+  description    = "A Hugo blog powered by the Risotto theme"
+  dateFormat     = "Jan 2, 2006"
+  highlightStyle = "monokai"
 
 # ————————————————————————————————————————————————————————————————
-#  Main menu (header navigation)
+#  Params (Your social links, UI controls, etc.)
+# ————————————————————————————————————————————————————————————————
+[params]
+  github    = "ghostoptimizer"
+  twitter   = "your_twitter_handle"
+  linkedin  = "your_linkedin_username"
+  email     = "hello@jadonsblog.com"
+  palette   = "windows-95"   # 💡 Pick any: dracula, gruvbox-dark, solarized-light, etc.
+  showTags  = true
+  showCategories = true
+  themeStyle = "Retro 90s vibe"
+
+# ————————————————————————————————————————————————————————————————
+#  Navigation (Add more if needed)
 # ————————————————————————————————————————————————————————————————
 [[menu.main]]
   identifier = "home"
@@ -35,7 +39,7 @@ enableRobotsTXT = true
 [[menu.main]]
   identifier = "about"
   name       = "About"
-  url        = "/about/"   # adjust to whatever you use for your blog section
+  url        = "/about/"
   weight     = 2
 
 [[menu.main]]
@@ -44,7 +48,9 @@ enableRobotsTXT = true
   url        = "/posts/"
   weight     = 3
 
-
+# ————————————————————————————————————————————————————————————————
+#  Taxonomies
+# ————————————————————————————————————————————————————————————————
 [taxonomies]
-  tag         = "tags"
-  category    = "categories"
+  tag      = "tags"
+  category = "categories"

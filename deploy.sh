@@ -3,7 +3,7 @@ set -euo pipefail
 
 # ───── CONFIG ─────
 REMOTE_USER=webdeploy
-REMOTE_HOST=134.122.9.34
+REMOTE_HOST=138.197.89.112
 REMOTE_BASE=/var/www
 RELEASES_DIR=$REMOTE_BASE/releases
 CURRENT_LINK=$REMOTE_BASE/current
