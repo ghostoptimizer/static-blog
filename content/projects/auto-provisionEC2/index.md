@@ -6,7 +6,7 @@ tags: []
 draft: true
 ---
 
-I started studying for the AWS Certified Cloud Practitioner and kept bumping into “user data,” “cloud-init,” and this promise that an instance can boot itself into usefulness. I wanted something reproducible, self-documenting, and clean enough to scale later but small enough to understand the process.
+ While studying for the AWS CCP exam, I kept running into “user data” and “cloud-init.”  It fascinated me that a server could basically wake up and build itself. I wanted to understand that from the ground up, so I put together a small, repeatable setup — something clean, easy to follow, and ready to grow if I ever decide to take it further.
 
 ---
 
@@ -33,4 +33,4 @@ Complexity is a cost. For learning, I want the shortest path from apply → aliv
 
 ## Final Thoughts
 
-If you’re learning about DevOps/Cloud Engineering, I hope this gives you a nice small project to get your foot in the door. Take what’s useful, if you notice gaps or a cleaner pattern, feel free to share because I’m still learning as well, Ciao!
+If you’re learning about DevOps/Cloud Engineering, I hope this gives you a nice small project to get your foot in the door. Take what’s useful, if you notice gaps or a cleaner pattern, feel free to share, I’m still learning as well!
