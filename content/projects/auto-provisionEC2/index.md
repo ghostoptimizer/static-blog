@@ -3,7 +3,7 @@ title: "Auto Provisioning an EC2"
 date: 2025-10-24T16:40:16-05:00
 summary: ""
 tags: []
-draft: true
+draft: false
 ---
 
  While studying for the AWS CCP exam, I kept running into “user data” and “cloud-init.”  It fascinated me that a server could basically wake up and build itself. I wanted to understand that from the ground up, so I put together a small, repeatable setup — something clean, easy to follow, and ready to grow if I ever decide to take it further.
