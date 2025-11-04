@@ -6,18 +6,19 @@ comments: false
 images:
 ---
 
+Hi I'm Jadon and I love working with technology as a whole, I joined tech out of curiosity and respect for how deeply it impacts people’s lives. In my free time I really just enjoy the small things in life but traveling is just where it's AT my friends but ultimately I’m here to learn, build, and hopefully help tech serve humans a little better.
+
 ---
 
-This blog was probably the coolest projects I've done yet, I only spent 3 months building it, broke it 12 times, spent hours trying to find the most simplest bugs but I've learned more from completing this entire project than most other methods I've tried. Hopefully its insightful and helps in some way! 
+This blog was probably the coolest projects I've done yet, I only spent 3 months building it, broke it 12 times, spent hours hunting the most simplest bugs but I've learned more from completing this entire project than almost any other method I've tried. Hopefully its insightful and helps in some way! 
 
-Que pasa, I'm Jadon and I love working with technology as a whole, in my free time I really just enjoy the small things in life but traveling is just where it's AT my friends, gotta get a little culture in me ya know? 
+I don't have a background in tech and decided to start early May, 2025 where I was then opened up to the world of DevOps/SRE and loved it. Here are some things I'm currently working on:
 
-Currently Working On:
-
- - Kubernetes Homelab (bare metal Ibuypower PC)
+ - Bare-metal Kubernetes homelab (iBuyPower PC)
  - Languages: Golang and Python
  - Cloud Concepts (AWS)
 
 ---
 
-Thanks for stopping by!
+Let me know what you think about the blog, send me a DM - let's talk some shit or I can buy you a coffee, maybe help each other out 
+
